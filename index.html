@@ -1,35 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LumiBoost - Smart Image Enhancer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LumiBoost - Smart Photo Enhancement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.5;
+    }
+    header {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 1.5rem 4rem;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h2 {
+      color: #1a73e8;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    h3 {
+      color: #1a73e8;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .screenshot-block {
+      margin-bottom: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .screenshot-block img {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem auto;
+      border-radius: 8px;
+    }
+    .screenshot-block h3 {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .screenshot-block p {
+      text-align: center;
+      padding: 0 1rem 1rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section-note {
+      font-size: 0.8rem;
+      color: #666;
+      background: #f1f5ff;
+      border-left: 4px solid #1a73e8;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; margin: 40px;">
-  <h1>LumiBoost App</h1>
-  <p><b>Developer:</b> Haider Alfursani</p>
+<body>
 
-  <h2>About LumiBoost</h2>
-  <p>
-    LumiBoost is a smart Android photo enhancer that improves brightness, contrast, and color
-    using advanced processing — directly on your device. No internet is required for photo processing.
-  </p>
+<header>
+  <h1>LumiBoost</h1>
+  <p>Smart Photo Enhancement – Instant clarity, brightness, and detail.</p>
+</header>
 
-  <h2>Features</h2>
-  <ul>
-    <li>AI-powered photo enhancement</li>
-    <li>Real-time before/after preview</li>
-    <li>Offline processing (no data upload)</li>
-    <li>Integrated AdMob interstitial ads</li>
-  </ul>
+<main class="wrapper">
 
-  <h2>Permissions</h2>
-  <ul>
-    <li>Storage access – for saving and loading images only</li>
-    <li>Internet – used for displaying ads (AdMob)</li>
-  </ul>
+  <section id="about">
+    <h2>About LumiBoost</h2>
+    <p>
+      LumiBoost is an Android photo enhancement app designed to improve dark, low-quality, or underexposed photos.
+      The app boosts brightness, improves contrast, and recovers color while keeping the image clear and detailed.
+    </p>
+    <p>
+      All processing happens locally on your device.
+      Your photos are never uploaded to any external server.
+    </p>
+    <p>
+      After adjusting your photo, you can save the enhanced version directly to your gallery.
+    </p>
+  </section>
 
-  <p><a href="privacy.html">Read our Privacy Policy</a></p>
-  <p>Contact: <b>haideralfursani@gmail.com</b></p>
+  <section id="screenshots">
+    <h2>App Screenshots</h2>
+
+    <div class="screenshot-block">
+      <h3>1. Application Interface</h3>
+      <img src="1_Front.jfif" alt="LumiBoost main interface screenshot" />
+      <p>
+        The main screen of LumiBoost. You can upload a photo from your device, preview the enhancement,
+        adjust parameters, and save the improved result. The preview shows original vs enhanced side by side.
+      </p>
+    </div>
+
+    <div class="screenshot-block">
+      <h3>2. Enhanced Image Example</h3>
+      <img src="enhance2.jfif" alt="Enhanced image example screenshot" />
+      <p>
+        After selecting an image, LumiBoost automatically improves brightness, contrast, and color balance.
+        This gives you an instant enhanced result that you can review before saving.
+      </p>
+    </div>
+
+    <div class="screenshot-block">
+      <h3>3. Slider Comparison Preview</h3>
+      <img src="unhance slid move.jfif" alt="Before/After comparison slider screenshot" />
+      <p>
+        The “Move the direction of improvement” slider lets you reveal either the original version or
+        the enhanced version of the photo. Slide left to view more of the original,
+        slide right to view more of the improved result. You can visually check the difference in real time.
+      </p>
+    </div>
+
+    <div class="screenshot-block">
+      <h3>4. Upload and Adjust</h3>
+      <img src="upload2.jfif" alt="Upload and adjustment screenshot" />
+      <p>
+        After you tap <strong>Upload</strong> and pick a photo from your device,
+        you can fine-tune the result using three sliders:
+        <br><br>
+        <strong>Color</strong> – Recovers saturation and makes colors richer.<br>
+        <strong>Midpoint</strong> – Controls overall brightness, especially in dark areas.<br>
+        <strong>Gain</strong> – Increases clarity and contrast for sharper detail.
+      </p>
+    </div>
+  </section>
+
+  <section id="guide">
+    <h2>How to Use LumiBoost – Step-by-Step Guide</h2>
+
+    <h3>Step 1: Upload a Photo</h3>
+    <p>
+      Tap the <strong>Upload</strong> button at the top of the app. Select a photo from your phone.
+      The photo will appear in the preview area.
+    </p>
+
+    <h3>Step 2: Instant Enhancement Preview</h3>
+    <p>
+      LumiBoost automatically enhances the photo. You immediately see an improved version (brighter, cleaner).
+      The app also shows a before/after split so you can understand the difference.
+    </p>
+
+    <h3>Step 3: Compare Original vs Enhanced</h3>
+    <p>
+      Use the horizontal slider labeled <strong>“Move the direction of improvement”</strong>:
+      slide it to switch between the original and the enhanced version of the image.
+      This is a live preview – no saving needed yet.
+    </p>
+
+    <h3>Step 4: Adjust the Enhancement</h3>
+    <p>
+      If you want more control, use the three sliders:
+    </p>
+    <ul>
+      <li><strong>Color</strong> – Restores and boosts color saturation for a more vivid look.</li>
+      <li><strong>Midpoint</strong> – Adjusts brightness levels, especially in dark photos. Moving it to the right brightens the image.</li>
+      <li><strong>Gain</strong> – Increases contrast and clarity to make edges and textures more defined.</li>
+    </ul>
+    <p>
+      You can also tap <strong>RESET</strong> to return all sliders to their default values.
+    </p>
+
+    <h3>Step 5: Save the Result</h3>
+    <p>
+      When you’re happy with how the image looks, tap <strong>Download</strong>.
+      The enhanced photo will be saved to your device’s gallery.
+    </p>
+
+    <div class="section-note">
+      Tip: If the automatic enhancement already looks good, you can save immediately.
+      If not, adjust Color / Midpoint / Gain first, then save.
+    </div>
+
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy and Local Processing</h2>
+    <p>
+      LumiBoost processes images locally on your device. No internet connection is required for enhancement.
+      Your photos are never uploaded to any remote server by the app.
+    </p>
+    <p>
+      The app uses Google AdMob to display ads. AdMob may collect device identifiers to deliver
+      personalized or non-personalized ads, following Google’s advertising policies.
+    </p>
+    <p>
+      For full details, please read the
+      <a href="privacy.html">LumiBoost Privacy Policy</a>.
+    </p>
+  </section>
+
+  <footer>
+    LumiBoost © 2025 — Developed by Haider Alfursani —
+    Contact: <a href="mailto:haider.alfursani@gmail.com">haider.alfursani@gmail.com</a>
+  </footer>
+
+</main>
 </body>
 </html>
